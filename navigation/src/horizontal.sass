@@ -2,3 +2,36 @@
 @import blueprint
 @import compass/utilities.sass
 
+.clearme
+	+clearfix
+	clear: both
+
+.spacer
+	width: 100%
+	height: 100px
+
+#nav1
+	.nav
+		ul
+			padding: 0
+			margin: 0
+			list-style: none
+	
+		a
+			display: block
+			width: 10em
+	
+		li
+			float: left
+			width: 10em
+		
+			ul
+				position: absolute
+				width: 10em
+				left: -999em
+		
+		li:hover, li.javascript-hover
+	
+			ul
+				left: auto
+	
